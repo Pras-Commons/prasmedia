@@ -1,13 +1,27 @@
 ---
 layout: default
 ---
-<h1>{{ site.title }}</h1>
-<p>{{ site.description }}</p>
+{% assign posts = site.posts %}
+{% if posts.size > 0 %}
+  {% assign first = posts.first %}
+  <div class="hero">
+    {% if first.image %}<img class="thumb" src="{{ first.image }}">{% else %}<div class="thumb"></div>{% endif %}
+    <div class="info">
+      <span class="tag">● {{ first.category | default: "ARTIKEL" }}</span>
+      <h1><a href="{{ first.url }}">{{ first.title }}</a></h1>
+      <p class="meta">{{ first.date | date: "%d %B %Y" }}</p>
+    </div>
+  </div>
+{% endif %}
 
-{% for post in site.posts %}
-  <div>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.date | date: "%d %B %Y" }}</p>
-    <p>{{ post.excerpt }}</p>
+<div class="ad-slot">Dari mitra kami<br><span>Ruang iklan</span></div>
+
+{% for post in posts offset: 1 %}
+  <div class="item">
+    {% if post.image %}<img class="thumb-sm" src="{{ post.image }}">{% else %}<div class="thumb-sm"></div>{% endif %}
+    <div>
+      <span class="tag">● {{ post.category | default: "ARTIKEL" }}</span>
+      <h2 style="font-size:15px">{{ post.title | truncate: 60 }}</h2>
+    </div>
   </div>
 {% endfor %}
