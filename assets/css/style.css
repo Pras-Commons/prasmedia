@@ -1,16 +1,21 @@
-body{margin:0;background:#F7F3EA;color:#211D1A;font-family:'IBM Plex Sans',sans-serif}
+body{margin:0;background:#FFFFFF;color:#101820;font-family:'IBM Plex Sans',sans-serif}
 h1,h2{font-family:'Source Serif 4',Georgia,serif;font-weight:700;margin:0.3em 0}
-.masthead{text-align:center;padding:24px 16px 14px;border-bottom:2px solid #211D1A}
-.masthead h1 a{color:#211D1A;text-decoration:none;font-size:32px}
-.masthead p{color:#6B6459;font-size:13px;margin-top:4px}
-main{max-width:640px;margin:0 auto;padding:0 16px}
-.tag{color:#A13328;font-size:12px;font-weight:500}
-.meta{color:#6B6459;font-size:13px;margin:6px 0}
+.masthead{background:#0B2545;text-align:center;padding:18px 16px}
+.masthead h1 a{color:#FFFFFF;text-decoration:none;font-size:26px}
+.masthead p{color:#C9D6E5;font-size:12px;margin-top:4px}
+.navbar{background:#12345C;display:flex;gap:14px;padding:8px 16px;overflow-x:auto;font-size:12px}
+.navbar a{color:#C9D6E5;text-decoration:none;white-space:nowrap}
+main{max-width:640px;margin:0 auto}
+.tag{color:#0B2545;font-size:11px;font-weight:500}
+.meta{color:#8A94A0;font-size:12px;margin:4px 0}
 a{color:inherit}
-.hero{padding:20px 0;border-bottom:1px solid #D9D2C2}
-.item{padding:16px 0;border-bottom:1px solid #D9D2C2}
-.ad-slot{margin:16px 0;border:1px dashed #B3AA95;border-radius:6px;padding:16px;text-align:center;color:#6B6459;font-size:13px}
-.ad-slot span{font-size:12px;color:#948C7C}
+.thumb{width:100%;height:160px;object-fit:cover;background:#D6DEE8}
+.thumb-sm{width:80px;height:60px;object-fit:cover;border-radius:4px;flex-shrink:0;background:#D6DEE8}
+.hero{border-bottom:1px solid #E4E8ED;padding-bottom:14px}
+.hero .info{padding:12px 16px 0}
+.item{display:flex;gap:10px;padding:14px 16px;border-bottom:1px solid #E4E8ED}
+.ad-slot{margin:16px;border:1px solid #0B2545;border-radius:6px;padding:16px;text-align:center;color:#5A6B80;font-size:13px}
+.ad-slot span{font-size:12px;color:#0B2545}
 .post img{width:100%;border-radius:6px;margin:12px 0}
 .post .body{line-height:1.7;margin-top:12px}
-footer{text-align:center;padding:20px;color:#948C7C;font-size:12px}
+footer{text-align:center;padding:20px;color:#8A94A0;font-size:12px}
